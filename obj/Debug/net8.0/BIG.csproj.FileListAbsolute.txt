@@ -31,3 +31,4 @@ C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\refint\BIG.dll
 C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\BIG.pdb
 C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\BIG.genruntimeconfig.cache
 C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\ref\BIG.dll
+C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\BIG.sourcelink.json
