@@ -21,9 +21,20 @@ window.onscroll = () => {
     })
 }
 
-menuIcon.onClick = () => {
+//menuIcon.onClick = () => {
+//    menuIcon.classList.toggle('bx-x');
+//    navbar.classList.toggle('active');
+//}
+
+
+menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
-}
+};
+
+window.addEventListener('scroll', () => {
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
+});
 
 
