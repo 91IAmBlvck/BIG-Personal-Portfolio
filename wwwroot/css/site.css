@@ -396,6 +396,7 @@ padding-left: calc(50% + 30px);
     transform: scale(1.05);
     box-shadow: 0 0 25px var(--main-color);
 }
+
 .timeline-content h3{
     font-size: 20px;
     color: white;
@@ -712,6 +713,11 @@ background-color:var(--bg-color);
     .timeline-content:active {
         transform: none;
     }
+
+    .timeline-content:hover {
+            transform: none;
+            box-shadow: 0 0 10px var(--main-color);
+     }
 /*    .timeline-items:nth-child(odd){
         padding-right: 0;
         text-align: left;
@@ -741,9 +747,6 @@ background-color:var(--bg-color);
     .footer{
         padding: 2rem 3%;
     }
-
-
-
 
 }
 
