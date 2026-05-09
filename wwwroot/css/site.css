@@ -255,6 +255,8 @@ span {
     font-size: 34px;
     font-weight: 600;
     min-width: 280px;
+    min-height: 5rem;
+    display: inline-block;
 }
 
     .text-animation span {
@@ -295,7 +297,7 @@ span {
     }
 
     41%, 60% {
-        content: "Mobile App Developer"
+        content: "Mobile App Dev"
     }
 
     61%, 80% {
@@ -677,6 +679,7 @@ background-color:var(--bg-color);
 }
 
 
+
 @media (max-width: 991px) {
     header {
         padding: 2rem 3%;
@@ -685,6 +688,13 @@ background-color:var(--bg-color);
     section {
         padding: 10rem 3% 2rem;
     }
+
+    .timeline-item {
+        padding-left: 37px !important;
+        padding-right: 0 !important;
+        text-align: left !important;
+    }
+
     .timeline-items::before{
         left: 7px;
     }
@@ -694,12 +704,12 @@ background-color:var(--bg-color);
         text-align: left;
     }*/
 
-    .timeline-item:nth-child(odd),
+   /* .timeline-item:nth-child(odd),
     .timeline-item:nth-child(even){
         padding-left: 37px;
         padding-right: 0;
         text-align: left;
-    }
+    }*/
 
     .timeline-dot{
         left: 0;
@@ -757,9 +767,9 @@ background-color:var(--bg-color);
             }
 
         .home {
-            
-            flex-direction: column-reverse; /* Stack elements vertically on small screens */
-           margin: 5rem 4rem
+            gap: 5rem;
+            flex-direction: column-reverse;  /*Stack elements vertically on small screens */
+           margin: 5rem 4rem;
         }
        
 
@@ -780,18 +790,49 @@ background-color:var(--bg-color);
         }
 
         .home-img img {
-            top: 2rem;
-            width: 60vw; /*altered*/
+            top: 3;
+            margin-top: 2rem;
+            width: 60vw;/* altered*/
             max-width: 280px; /*altered*/
-            /* width:42vw;*/
+             width:42vw;
         }
 
         .services h2{
             margin-bottom: 3rem;
         }
 
-        .services-container{
-            grid-template-columns: /*repeat(1,*/ 1fr /*)*/;
+
+        .services-container {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        .service-box {
+            height: auto;
+            min-height: unset;
+        }
+
+            .service-box .service-info {
+                padding: 2rem;
+            }
+
+        .service-info h4 {
+            font-size: 2.2rem;
+            line-height: 1.3;
+        }
+
+        .service-info p {
+            font-size: 1.4rem;
+            line-height: 1.6;
+        }
+
+        .text-animation {
+            font-size: 2.4rem;
+            min-height: 4rem;
+        }
+
+        /*.services-container{
+            grid-template-columns:*/ /*repeat(1,*/ /*1fr*/ /*)*//*;
         }
 
         .service-box {
@@ -800,5 +841,5 @@ background-color:var(--bg-color);
 
         .service-box .service-info{
             padding: 2rem;
-        }
+        }*/
     }
