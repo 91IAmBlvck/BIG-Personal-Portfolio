@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BIG</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/BIG.styles.css" asp-append-version="true" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" asp-append-version="true" />
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo"><span>Personal Portfolio</span></a>
+        
+        <div id="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#education">Education</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    
+    @* <div class="welcome">
+        <marquee>
+            <h2>Sorry! We Are Under Scheduled Maintenance</h2>
+        </marquee>
+    </div> *@
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h2><b>Bandile I. Gama</b></h2>
+
+            <h3 class="text-animation">I am a <span></span></h3>
+            <div><h3></h3></div>
+            <p>As an Information and Communications Technology (ICT) student specializing in software and web development, I am passionate about leveraging technology to solve real-world problems. I am committed to building innovative, user-centric solutions in dynamic work environments that foster growth and creativity.</p>
+            
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/bandilegama/" class="fab fa-linkedin"></a>
+                <a href="https://github.com/91IAmBlvck" class="fab fa-github"></a>
+                <a href="https://www.instagram.com/iam._.Bandile/" class="fab fa-instagram"></a>
+                <a href="https://x.com/BandiileGama" class="fab fa-x"></a>
+            </div>
+
+            <div class="btn-group">
+                <a href="#" class="btn">Hire</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <img src="images/BIG.jpg" alt="Portrait of Bandile Gama" />
+        </div>
+    </section>
+
+    <section class="education" id="education">
+        <h2 class="heading">Education</h2>
+
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2021</div>
+                <div class="timeline-content">
+                    <h3>Secondary Institution</h3>
+                    <p>I matriculated at Inqayizivele Secondary School</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2022</div>
+                <div class="timeline-content">
+                    <h3>Learnership</h3>
+                    <p>Completed a Learnership at iTalk2U</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2023</div>
+                <div class="timeline-content">
+                    <h3>Tertiary Institution</h3>
+                    <p>Enrolled at Durban University of Technology</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">Services</h2>
+
+        <div class="services-container">
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Fullstack Development</h4>
+                    <p>I provide services developing a complete front-end and back-end web application.</p>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Frontend Development</h4>
+                    <p>I provide services in UI/UX designing, web development, and mobile app development.</p>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Backend Development</h4>
+                    <p>I provide services in database management, server-side logic, API development, authentication, and cloud services.</p>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>E-commerce Development</h4>
+                    <p>I provide services in developing online stores and shopping platforms.</p>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Desktop Application Development</h4>
+                    <p>I provide services developing software applications that run on Windows desktop operating systems.</p>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Quality Assurance</h4>
+                    <p>I provide services in functionality testing, performance testing, mobile testing, and cloud testing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="projects-box">
+            <h2 class="heading">Projects</h2>
+
+            <div class="wrapper">
+                <div class="project-item">
+                    <img src="images/mindgame.png" alt="MindGame">
+                    <h2>MindGame</h2>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i><i class='bx bxs-star' id="star"></i><i class='bx bxs-star' id="star"></i><i class='bx bxs-star' id="star"></i><i class='bx bxs-star' id="star"></i>
+                    </div>
+                     <p>An Android game to challenge cognitive skills, built with Java.</p>
+                </div>
+
+                <div class="project-item">
+                    <img src="images/Project.png" alt="Community Engagement Group">
+                    <h2>Community Engagement Group</h2>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i><i class='bx bxs-star' id="star"></i><i class='bx bxs-star' id="star"></i><i class='bx bxs-star' id="star"></i>
+                    </div>
+                    
+                    <p>A group portfolio web application built with ASP.NET Core MVC for community engagements.</p>
+                </div>
+
+                <div class="project-item">
+                    <img src="images/mindgame.png" alt="MindGame">
+                    <h2>Student Management System</h2>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i><i class='bx bxs-star' id="star"></i><i class='bx bxs-star' id="star"></i><i class='bx bxs-star' id="star"></i>
+                    </div>
+                     <p>A web application that enables the Administrator to manage Student Information with ease.</p>
+                </div>
+
+                <div class="project-item">
+                    <img src="images/MarketMakers.png" alt="MarketMakers">
+                    <h2>MarketMakers</h2>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i><i class='bx bxs-star' id="star"></i><i class='bx bxs-star' id="star"></i><i class='bx bxs-star' id="star"></i><i class='bx bxs-star' id="star"></i>
+                    </div>
+                    <p>A web appliaction that teaches people from Beginner to Advanced about the Financial Markets and how to Trade.</p>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Phone Number" required>
+                    <input type="text" placeholder="Subject" required>
+                </div>
+            </div>
+            <div class="input-group-2">
+                <textarea cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </div>
+        </form>
+    </section>
+
+
+    @* <footer class="footer">
+        <div class="footer-content">
+            <div class="social">
+                <a href="https://www.linkedin.com/in/bandilegama/" class="fab fa-linkedin"></a>
+                <a href="https://github.com/91IAmBlvck" class="fab fa-github"></a>
+                <a href="https://www.instagram.com/iam._.bandile/" class="fab fa-instagram"></a>
+                <a href="https://x.com/BandiileGama" class="fab fa-twitter"></a>
+            </div>
+            <ul class="list">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <p class="copyright">
+                © Bandile Gama | All Rights Reserved
+            </p>
+        </div>
+    </footer>
+ *@
+
+
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+ <script>
+function toggleMenu() {
+    document.querySelector('.navbar').classList.toggle('active');
+}
+</script>
+    @* <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script> *@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
