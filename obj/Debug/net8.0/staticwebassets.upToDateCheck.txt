@@ -1,7 +1,9 @@
+wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\Bandile.jpg
 wwwroot\images\BIG.jpg
-wwwroot\images\BIG1.jpeg
+wwwroot\images\BIGPRE.jpg
+wwwroot\images\favicon.jpg
 wwwroot\images\MarketMakers.png
 wwwroot\images\MarketMakersPRE.png
 wwwroot\images\mindgame.png
@@ -64,4 +66,3 @@ wwwroot\lib\jquery\dist\jquery.js
 wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
-wwwroot\css\site.css
