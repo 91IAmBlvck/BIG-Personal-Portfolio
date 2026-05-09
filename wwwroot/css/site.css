@@ -706,6 +706,7 @@ background-color:var(--bg-color);
         box-sizing: border-box;
         overflow-wrap: break-word;
         word-break: break-word;
+        padding: 20px;
     }
 
     .timeline-content:active {
