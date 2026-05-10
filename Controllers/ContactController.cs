@@ -40,7 +40,13 @@ namespace BIG.Controllers
                     $"Phone: {model.PhoneNumber}\n\n" +
                     $"Message:\n{model.Message}";
 
-                var smtp = new SmtpClient("smtp.gmail.com", 587);
+                var smtp = new SmtpClient("smtp.gmail.com", 587)
+                {
+                        Credentials = new NetworkCredential(fromEmail, appPassword),
+                        EnableSsl = true,
+                        Timeout = 20000
+                };
+                
 
                 smtp.Credentials = new NetworkCredential(fromEmail, appPassword);
                 smtp.EnableSsl = true;
