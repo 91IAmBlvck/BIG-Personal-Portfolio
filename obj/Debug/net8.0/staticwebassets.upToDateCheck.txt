@@ -1,10 +1,13 @@
-wwwroot\js\site.js
 wwwroot\favicon.ico
 wwwroot\images\Bandile.jpg
+wwwroot\images\BIG.jpg
 wwwroot\images\BIGPRE.jpg
-wwwroot\css\site.css
+wwwroot\images\favicon.jpg
+wwwroot\images\MarketMakers.png
+wwwroot\images\MarketMakersPRE.png
 wwwroot\images\mindgame.png
 wwwroot\images\Project.png
+wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
@@ -62,7 +65,4 @@ wwwroot\lib\jquery\dist\jquery.js
 wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
-wwwroot\images\MarketMakersPRE.png
-wwwroot\images\MarketMakers.png
-wwwroot\images\favicon.jpg
-wwwroot\images\BIG.jpg
+wwwroot\css\site.css

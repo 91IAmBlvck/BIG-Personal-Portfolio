@@ -198,7 +198,11 @@
     </section>
 
     <section class="contact" id="contact">
+       
         <h2 class="heading">Contact <span>Me</span></h2>
+        <div class="maintenance-warning">
+            ⚠️ Contact form is currently under maintenance. Please do not submit messages.
+        </div>
             <form method="post" action="/Contact/Send">
                 <div class="input-group">
                     <div class="input-box">
@@ -207,7 +211,9 @@
                     </div>
 
                     <div class="input-box">
-                        <input type="text" name="PhoneNumber" placeholder="Phone Number" required>
+                        @* <input type="text" name="PhoneNumber" placeholder="Phone Number" required> *@
+                    <input type="tel" name="PhoneNumber" placeholder="Phone Number" required
+                           pattern="[0-9+ ]{10,15}">
                         <input type="text" name="Subject" placeholder="Subject" required>
                     </div>
                 </div>
