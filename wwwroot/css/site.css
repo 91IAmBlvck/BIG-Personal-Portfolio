@@ -166,7 +166,7 @@ span {
  }
     .home-img img {
         position: relative;
-        top: 6rem;
+        top: 5rem;
         width: 22vw;
         max-width: 260px; /*altered*/
         border-radius: 47%;
