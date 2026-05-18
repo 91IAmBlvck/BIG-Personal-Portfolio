@@ -15,6 +15,7 @@ C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\BIG.csproj.CoreCompileInputs.ca
 C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\BIG.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\BIG.RazorAssemblyInfo.cache
 C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\BIG.RazorAssemblyInfo.cs
+C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\BIG.sourcelink.json
 C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
@@ -31,4 +32,3 @@ C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\refint\BIG.dll
 C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\BIG.pdb
 C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\BIG.genruntimeconfig.cache
 C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\ref\BIG.dll
-C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\BIG.sourcelink.json

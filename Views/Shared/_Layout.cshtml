@@ -200,9 +200,23 @@
     <section class="contact" id="contact">
        
         <h2 class="heading">Contact <span>Me</span></h2>
-        <div class="maintenance-warning">
+
+        @if (TempData["SuccessMessage"] != null)
+        {
+        <div class = "alert alert-success">
+            @TempData["SuccessMessage"]
+        </div>    
+        }
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="alert alert-danger">
+                @TempData["ErrorMessage"]
+            </div>
+        }
+
+        @* <div class="maintenance-warning">
             ⚠️ Contact form is currently under maintenance. Please do not submit messages.
-        </div>
+        </div> *@
             <form method="post" action="/Contact/Send">
                 <div class="input-group">
                     <div class="input-box">
@@ -280,6 +294,23 @@ function toggleMenu() {
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+        setTimeout(function () {
+            let alerts = document.querySelectorAll('.alert');
+
+            alerts.forEach(function (alert) {
+                alert.style.transition = "opacity 0.5s ease";
+
+                alert.style.opacity = "0";
+
+                setTimeout(function () {
+                    alert.remove();
+                }, 500);
+            });
+
+        }, 4000);
+    </script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

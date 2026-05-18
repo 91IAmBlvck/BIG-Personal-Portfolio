@@ -884,3 +884,27 @@ background-color:var(--bg-color);
     font-weight: 600;
     border-bottom: 2px solid #000;
 }
+
+.alert {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem 2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.alert-success {
+    background-color: #1f3d1f;
+    color: #d4edda;
+    border-left: 5px solid #28a745;
+}
+
+.alert-danger {
+    background-color: #4a1111;
+    color: #f8d7da;
+    border-left: 5px solid #dc3545;
+}

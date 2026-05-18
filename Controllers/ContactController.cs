@@ -25,7 +25,7 @@ namespace BIG.Controllers
                     return RedirectToAction("Index", "Home");
                 }
 
-                var fromEmail = _configuration["EmailSettings:FromEmail"];
+                var fromEmail = _configuration["EmailSettings:Email"];
                 var appPassword = _configuration["EmailSettings:AppPassword"];
 
                 var mail = new MailMessage();
@@ -48,16 +48,24 @@ namespace BIG.Controllers
                 };
                 
 
-                smtp.Credentials = new NetworkCredential(fromEmail, appPassword);
-                smtp.EnableSsl = true;
+                //smtp.Credentials = new NetworkCredential(fromEmail, appPassword);
+                //smtp.EnableSsl = true;
 
                 smtp.Send(mail);
 
-                return Content("Email sent successfully!");
+                TempData["SuccessMessage"] = "Message sent successfully!";
+                return Redirect("/#contact");
+
+                //return RedirectToAction("Index", "Home");
+
+                //return Content("Email sent successfully!");
             }
             catch (Exception ex)
             {
-                return Content(ex.Message);
+                TempData["ErrorMessage"] = ex.Message;
+                return Redirect("/#contact");
+
+                //return RedirectToAction("Index", "Home");
             }
         }
     }
