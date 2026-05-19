@@ -1,7 +1,19 @@
+using Resend;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddHttpClient<ResendClient>();
+
+builder.Services.Configure<ResendClientOptions>(o =>
+{
+    o.ApiToken = builder.Configuration["Resend:ApiKey"];
+});
+
+builder.Services.AddTransient<IResend, ResendClient>();
 
 var app = builder.Build();
 

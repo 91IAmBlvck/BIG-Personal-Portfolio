@@ -6,4 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Resend" Version="0.5.1" />
+  </ItemGroup>
+
 </Project>
