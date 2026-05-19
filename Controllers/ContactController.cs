@@ -118,8 +118,73 @@
 //    }
 //}
 
+
+
+//using BIG.Models;
+//using System.Net;
+//using Microsoft.AspNetCore.Mvc;
+//using Resend;
+
+//namespace BIG.Controllers
+//{
+//    public class ContactController : Controller
+//    {
+//        private readonly IResend _resend;
+
+//        public ContactController(IResend resend)
+//        {
+//            _resend = resend;
+//        }
+
+//        [HttpPost]
+//        public async Task<IActionResult> Send(ContactFormModel model)
+//        {
+//            try
+//            {
+//                if (!ModelState.IsValid)
+//                {
+//                    return Redirect("/#contact");
+//                }
+
+//                var message = new EmailMessage();
+
+//                message.From = "onboarding@resend.dev";
+//                message.To.Add("gamabandile91@gmail.com");
+
+//                message.Subject = model.Subject;
+
+//                message.HtmlBody = $@"
+//                    <h2>New Portfolio Contact Message</h2>
+
+//                    <p><strong>Name:</strong> {model.FullName}</p>
+
+//                    <p><strong>Email:</strong> {model.Email}</p>
+
+//                    <p><strong>Phone:</strong> {model.PhoneNumber}</p>
+
+//                    <p><strong>Message:</strong></p>
+
+//                    <p>{model.Message}</p>
+//                ";
+
+//                await _resend.EmailSendAsync(message);
+
+//                TempData["SuccessMessage"] = "Message sent successfully!";
+
+//                return Redirect("/#contact");
+//            }
+//            catch (Exception ex)
+//            {
+//                TempData["ErrorMessage"] = ex.Message;
+
+//                return Redirect("/#contact");
+//            }
+//        }
+//    }
+//}
+
+
 using BIG.Models;
-using System.Net;
 using Microsoft.AspNetCore.Mvc;
 using Resend;
 
@@ -137,46 +202,37 @@ namespace BIG.Controllers
         [HttpPost]
         public async Task<IActionResult> Send(ContactFormModel model)
         {
+            if (!ModelState.IsValid)
+            {
+                return Redirect("/#contact");
+            }
+
             try
             {
-                if (!ModelState.IsValid)
+                var message = new EmailMessage
                 {
-                    return Redirect("/#contact");
-                }
-
-                var message = new EmailMessage();
-
-                message.From = "onboarding@resend.dev";
-                message.To.Add("gamabandile91@gmail.com");
-
-                message.Subject = model.Subject;
-
-                message.HtmlBody = $@"
-                    <h2>New Portfolio Contact Message</h2>
-
-                    <p><strong>Name:</strong> {model.FullName}</p>
-
-                    <p><strong>Email:</strong> {model.Email}</p>
-
-                    <p><strong>Phone:</strong> {model.PhoneNumber}</p>
-
-                    <p><strong>Message:</strong></p>
-
-                    <p>{model.Message}</p>
-                ";
+                    From = "Portfolio <onboarding@resend.dev>",
+                    To = new string[] { "gamabandile91@gmail.com" },
+                    Subject = model.Subject ?? "New Contact Message",
+                    HtmlBody = $@"
+                        <h2>New Portfolio Contact Message</h2>
+                        <p><strong>Name:</strong> {model.FullName}</p>
+                        <p><strong>Email:</strong> {model.Email}</p>
+                        <p><strong>Phone:</strong> {model.PhoneNumber}</p>
+                        <p><strong>Message:</strong><br/>{model.Message}</p>
+                    "
+                };
 
                 await _resend.EmailSendAsync(message);
 
                 TempData["SuccessMessage"] = "Message sent successfully!";
-
-                return Redirect("/#contact");
             }
-            catch (Exception ex)
+            catch
             {
-                TempData["ErrorMessage"] = ex.Message;
-
-                return Redirect("/#contact");
+                TempData["ErrorMessage"] = "Failed to send message.";
             }
+
+            return Redirect("/#contact");
         }
     }
 }
