@@ -32,3 +32,8 @@ C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\refint\BIG.dll
 C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\BIG.pdb
 C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\BIG.genruntimeconfig.cache
 C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\ref\BIG.dll
+C:\Users\gamab\source\repos\BIG\bin\Debug\net8.0\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\gamab\source\repos\BIG\bin\Debug\net8.0\Microsoft.Net.Http.Headers.dll
+C:\Users\gamab\source\repos\BIG\bin\Debug\net8.0\Resend.dll
+C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\BIG.csproj.AssemblyReference.cache
+C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\BIG.csproj.Up2Date
