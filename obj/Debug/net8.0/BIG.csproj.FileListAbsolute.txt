@@ -7,6 +7,10 @@ C:\Users\gamab\source\repos\BIG\bin\Debug\net8.0\BIG.deps.json
 C:\Users\gamab\source\repos\BIG\bin\Debug\net8.0\BIG.runtimeconfig.json
 C:\Users\gamab\source\repos\BIG\bin\Debug\net8.0\BIG.dll
 C:\Users\gamab\source\repos\BIG\bin\Debug\net8.0\BIG.pdb
+C:\Users\gamab\source\repos\BIG\bin\Debug\net8.0\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\gamab\source\repos\BIG\bin\Debug\net8.0\Microsoft.Net.Http.Headers.dll
+C:\Users\gamab\source\repos\BIG\bin\Debug\net8.0\Resend.dll
+C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\BIG.csproj.AssemblyReference.cache
 C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\rpswa.dswa.cache.json
 C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\BIG.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\BIG.AssemblyInfoInputs.cache
@@ -27,13 +31,9 @@ C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\staticwebassets.build.json.cach
 C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\BIG.csproj.Up2Date
 C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\BIG.dll
 C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\refint\BIG.dll
 C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\BIG.pdb
 C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\BIG.genruntimeconfig.cache
 C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\ref\BIG.dll
-C:\Users\gamab\source\repos\BIG\bin\Debug\net8.0\Microsoft.AspNetCore.WebUtilities.dll
-C:\Users\gamab\source\repos\BIG\bin\Debug\net8.0\Microsoft.Net.Http.Headers.dll
-C:\Users\gamab\source\repos\BIG\bin\Debug\net8.0\Resend.dll
-C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\BIG.csproj.AssemblyReference.cache
-C:\Users\gamab\source\repos\BIG\obj\Debug\net8.0\BIG.csproj.Up2Date
