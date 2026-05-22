@@ -209,18 +209,33 @@ namespace BIG.Controllers
 
             try
             {
+                //var message = new EmailMessage
+                //{
+                //    From = "Portfolio <onboarding@resend.dev>",
+                //    To = new string[] { "gamabandile91@gmail.com" },
+                //    Subject = model.Subject ?? "New Contact Message",
+                //    HtmlBody = $@"
+                //        <h2>New Portfolio Contact Message</h2>
+                //        <p><strong>Name:</strong> {model.FullName}</p>
+                //        <p><strong>Email:</strong> {model.Email}</p>
+                //        <p><strong>Phone:</strong> {model.PhoneNumber}</p>
+                //        <p><strong>Message:</strong><br/>{model.Message}</p>
+                //    "
+                //};
+
                 var message = new EmailMessage
                 {
-                    From = "Portfolio <onboarding@resend.dev>",
+                    From = "Bandile Portfolio <onboarding@resend.dev>",
+                    ReplyTo = model.Email,
                     To = new string[] { "gamabandile91@gmail.com" },
-                    Subject = model.Subject ?? "New Contact Message",
+                    Subject = $"[Portfolio Contact] {model.Subject ?? "New Message"}",
                     HtmlBody = $@"
-                        <h2>New Portfolio Contact Message</h2>
-                        <p><strong>Name:</strong> {model.FullName}</p>
-                        <p><strong>Email:</strong> {model.Email}</p>
-                        <p><strong>Phone:</strong> {model.PhoneNumber}</p>
-                        <p><strong>Message:</strong><br/>{model.Message}</p>
-                    "
+        <h2>New Portfolio Contact Message</h2>
+        <p><strong>Name:</strong> {model.FullName}</p>
+        <p><strong>Email:</strong> {model.Email}</p>
+        <p><strong>Phone:</strong> {model.PhoneNumber}</p>
+        <p><strong>Message:</strong><br/>{model.Message}</p>
+    "
                 };
 
                 await _resend.EmailSendAsync(message);
