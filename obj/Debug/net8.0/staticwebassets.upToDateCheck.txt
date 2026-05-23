@@ -1,5 +1,6 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\files\Bandile I. Gama IT CV.pdf
 wwwroot\images\Bandile.jpg
 wwwroot\images\BIG.jpg
 wwwroot\images\BIGPRE.jpg
