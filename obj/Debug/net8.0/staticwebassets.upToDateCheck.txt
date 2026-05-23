@@ -1,6 +1,5 @@
-wwwroot\css\site.css
 wwwroot\favicon.ico
-wwwroot\files\Bandile I. Gama IT CV.pdf
+wwwroot\files\Bandile Gama IT CV.pdf
 wwwroot\images\Bandile.jpg
 wwwroot\images\BIG.jpg
 wwwroot\images\BIGPRE.jpg
@@ -67,3 +66,4 @@ wwwroot\lib\jquery\dist\jquery.js
 wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
+wwwroot\css\site.css
